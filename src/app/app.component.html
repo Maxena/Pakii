@@ -1,13 +1,5 @@
 <!--<aside *ngIf="loggedIn" class="navbar navbar-vertical navbar-expand-lg navbar-{{theme}}" shared-side-bar></aside>-->
 <!--<header *ngIf="loggedIn" class="navbar navbar-expand-md navbar-light d-none d-lg-flex d-print-none" shared-nav-bar>-->
 <!--</header>-->
-<div class="page-wrapper">
-  <div class="page-body">
-    <div class="container-xl">
-      <div class="row row-deck row-cards">
-        <router-outlet></router-outlet>
-      </div>
-    </div>
-  </div>
+<router-outlet></router-outlet>
 <!--  <footer *ngIf="loggedIn" class="footer footer-transparent d-print-none" shared-footer></footer>-->
-</div>

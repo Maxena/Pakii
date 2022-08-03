@@ -1,10 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require("tailwindcss/plugin");
+const colors = require("tailwindcss/colors");
+
 module.exports = {
-  content: [
-    "./src/**/*.{html,ts}",
-  ],
+  darkMode: "class",
+  content: ["./src/**/*.{html,ts}"],
+  daisyui: {
+    themes: [],
+  },
   theme: {
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [require("daisyui")],
+};
